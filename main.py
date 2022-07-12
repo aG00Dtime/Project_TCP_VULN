@@ -87,13 +87,13 @@ class TcpAttack:
             return True
 
 
-# --- testing ---#
-spoofIP = "192.168.1.12"
-targetIP = "192.168.1.1"
-rangeStart = 50
-rangeEnd = 80
-port = 80
-Tcp = TcpAttack(spoofIP, targetIP)
-Tcp.scanTarget(rangeStart, rangeEnd)
-# if Tcp.attackTarget(port):
-#     print('port was open to attack')
+# # --- testing ---#
+# spoofIP = "192.168.1.12"
+# targetIP = "192.168.1.1"
+# rangeStart = 50
+# rangeEnd = 80
+# port = 80
+# Tcp = TcpAttack(spoofIP, targetIP)
+# Tcp.scanTarget(rangeStart, rangeEnd)
+# # if Tcp.attackTarget(port):
+# #     print('port was open to attack')
