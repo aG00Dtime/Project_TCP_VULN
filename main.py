@@ -33,7 +33,7 @@ class TcpAttack:
 
             # create and send a packet to check if a response is given
             # sr1 returns the packet that answered the SYN that is sent
-            packet = sr1(IP(src=self.spoofIp, dst=self.targetIp) / TCP(sport=sport, dport=port, flags="S"), timeout=.5,
+            packet = sr1(IP(dst=self.targetIp) / TCP(sport=sport, dport=port, flags="S"), timeout=.5,
                          verbose=0)
 
             # check if packet contains the syn and ack flags
